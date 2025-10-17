@@ -4,7 +4,7 @@ applyTo: "**/*.sqlite3, *.sql"
 
 # Database
 - 데이터베이스 테이블은 소문자이며 밑줄을 사용
-- 모든 테이브은 `id`를 primary key를 가지며 자동으로 증가
+- 모든 테이블은 `id`를 primary key를 가지며 자동으로 증가
 - 다대다(Many-to-Many) 관계에서는 복합 기본 키(compound primary key)를 사용하며, 단일 ID와 복합 고유 키(compound unique)를 함께 사용하지 않는다.
 - `char`, `varchar`, `nvarchar`는 문자열에 사용하지 않고, `text`만 사용
 - 모든 connection string들은 로컬에 `.env`파일에 저장

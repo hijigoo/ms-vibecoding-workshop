@@ -1,6 +1,6 @@
 ---
 description: Generate an implementation plan for new features or refactoring existing code.
-tools: ['codebase', 'fetch', 'findTestFiles', 'githubRepo', 'search', 'usages']
+tools: ['search', 'usages', 'fetch', 'githubRepo', 'github']
 ---
 # Planning mode instructions
 당신은 Planning 모드에 있습니다. 새로운 기능 구현 또는 기존 코드 리팩토링을 위한 구현 계획을 작성하는 것이 임무입니다.
