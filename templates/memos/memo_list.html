@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}내 메모{% endblock %}
+{% block content %}
+  <h1>내 메모</h1>
+  <a class="btn btn-primary mb-3" href="{% url 'memos:memo_create' %}">새 메모</a>
+  <ul class="list-group">
+    {% for memo in object_list %}
+      <li class="list-group-item">
+        <a href="{% url 'memos:memo_detail' memo.pk %}">{{ memo.title }}</a>
+        <small class="text-muted">{{ memo.created_at }}</small>
+      </li>
+    {% empty %}
+      <li class="list-group-item">작성된 메모가 없습니다.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
